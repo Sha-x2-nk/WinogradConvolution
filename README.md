@@ -9,6 +9,7 @@ This project implements non-fused Winograd convolution: 2x2 with 3x3 filters, wh
     2. <b>Input Transform (B<sup>T</sup>.d.B)</b>
     3. <b>MKL's Batched GEMM for Hadamard Product</b>
     4. <b>Inverse Transform (A<sup>T</sup>.t.A)</b>
+* <b>SSE</b>: For efficiency, kernels take advantage of Intel SSE SIMD instructions.
 * <b>AVX</b>: For CPUs which support AVX instructions, an AVX implementation of input transform is provided.
 
 ## Usage
