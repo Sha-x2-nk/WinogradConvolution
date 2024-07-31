@@ -35,6 +35,8 @@ free(img); free(filter); free(out);
 
 ## Building and Running
 To build the project, ensure you have Intel OneAPI installed, at least MKL and properly configured. Use CMake to build the project.
+
+While I've used Intel C compiler bundled with OneAPI, it can be changed as long as equivalent flags are passed. 
 ```bash
 icx main.c -o main.exe -I "include" -march=native mkl_intel_lp64.lib mkl_intel_thread.lib mkl_core.lib libiomp5md.lib -Qiopenmp
 ```
